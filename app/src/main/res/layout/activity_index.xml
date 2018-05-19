@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light">
+
+    <TextView
+        android:text="나의\n정보"
+        android:id="@+id/myinfo"
+        android:fontFamily="sans-serif"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:layout_marginBottom="53dp"
+        android:layout_above="@+id/myhobby"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/abc8"
+        android:textAlignment="center"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:paddingTop="15dp"
+        android:textColor="?attr/actionMenuTextColor" />
+
+    <TextView
+        android:text="성장\n과정"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:id="@+id/mygrowth"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:textAlignment="center"
+        android:paddingTop="15dp"
+        android:textColor="?attr/actionMenuTextColor"
+        android:background="@drawable/abc8"
+        android:layout_below="@+id/myinfo"
+        android:layout_toRightOf="@+id/mypath"
+        android:layout_toEndOf="@+id/mypath" />
+
+    <TextView
+        android:text="나의\n취미"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:id="@+id/myhobby"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:paddingTop="15dp"
+        android:textAlignment="center"
+        android:background="@drawable/abc8"
+        android:textColor="?attr/actionMenuTextColor"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/mypath"
+        android:layout_toStartOf="@+id/mypath" />
+
+    <TextView
+        android:text="학교\n경로"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:id="@+id/mypath"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textColor="?attr/actionMenuTextColor"
+        android:paddingTop="15dp"
+        android:background="@drawable/abc8"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/mygrowth"
+        android:layout_alignLeft="@+id/myinfo"
+        android:layout_alignStart="@+id/myinfo" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:id="@+id/textView19"
+        android:background="@drawable/abc5"
+        android:layout_height="130dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

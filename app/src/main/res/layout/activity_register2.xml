@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light">
+
+    <TextView
+        android:text="추가정보"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:id="@+id/textView6"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        android:background="@drawable/abc7"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_uni"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:background="@drawable/abc4">
+
+        <TextView
+            android:text="학교"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/et_uni"
+            android:layout_weight="1"
+            android:hint="학교명" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_hakkha"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/input_uni"
+        android:layout_alignLeft="@+id/input_uni"
+        android:layout_alignStart="@+id/input_uni"
+        android:background="@drawable/abc4">
+
+        <TextView
+            android:text="학과"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/et_hakkha"
+            android:layout_weight="1"
+            android:hint="학과" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_hakbon"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/input_hakkha"
+        android:layout_alignLeft="@+id/input_hakkha"
+        android:layout_alignStart="@+id/input_hakkha"
+        android:background="@drawable/abc4">
+
+        <TextView
+            android:text="학번"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/et_hakbun"
+            android:layout_weight="1"
+            android:hint="학번" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_certificate"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/input_hakbon"
+        android:layout_alignLeft="@+id/input_hakbon"
+        android:layout_alignStart="@+id/input_hakbon"
+        android:background="@drawable/abc4">
+
+        <TextView
+            android:text="자격증"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_width="120dp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/et_certificate"
+            android:layout_weight="1"
+            android:hint="자격증" />
+    </LinearLayout>
+
+    <Button
+        android:text="완료"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp"
+        android:id="@+id/checkBtn"
+        android:padding="10dp"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:background="@drawable/abc3" />
+
+</RelativeLayout>

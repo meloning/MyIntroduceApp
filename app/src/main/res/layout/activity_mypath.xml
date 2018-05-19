@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/tmap"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="400dp">
+
+    </FrameLayout>
+
+    <Button
+        android:text="경로검색"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/FindPath"
+        android:layout_below="@+id/startPath"
+        android:layout_alignLeft="@+id/Findbrt"
+        android:layout_alignStart="@+id/Findbrt"
+        android:padding="5dp"
+        android:background="@drawable/abc3"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textAllCaps="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="21dp"
+        android:id="@+id/startPath"
+        android:hint="출발지"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/abc4" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/endPath"
+        android:hint="도착지"
+        android:layout_below="@+id/startPath"
+        android:layout_alignLeft="@+id/startPath"
+        android:layout_alignStart="@+id/startPath"
+        android:background="@drawable/abc4" />
+
+    <Button
+        android:text="편의시설"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Findbrt"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_above="@+id/FindPath"
+        android:layout_toRightOf="@+id/startPath"
+        android:layout_toEndOf="@+id/startPath"
+        android:padding="5dp"
+        android:background="@drawable/abc3"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textAllCaps="false" />
+</RelativeLayout>
